@@ -1,0 +1,24 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class Enuthu {
+	public static void main(String[] args) {
+		Scanner rs=new Scanner(System.in);
+		System.out.println("Enter the size of array");
+		int size=rs.nextInt();
+		int []a=new int[size];
+		System.out.println("Enter the array elements");
+		int index=0;
+		int[]b=new int [size];
+		for(int i=0;i<a.length;i++) {
+			a[i] =rs.nextInt();
+			
+		}
+		for(int i=a.length-1;i>=0;i--) {
+			b[index++]=a[i];
+		}
+		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(b));
+		
+	}
+	
+}
